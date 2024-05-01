@@ -24,10 +24,10 @@ model User {
 }
 
 model Book {
-  id          Int        @id @default(autoincrement())
-  title       String
-  total_pages Int
-  Interval    Interval[]
+  id       Int        @id @default(autoincrement())
+  title    String
+  author   String
+  Interval Interval[]
 
   @@index([id])
 }
@@ -40,4 +40,6 @@ model Interval {
   book       Book @relation(fields: [book_id], references: [id], onUpdate: NoAction, onDelete: NoAction)
   start_page Int
   end_page   Int
+
+  @@index([id])
 }
