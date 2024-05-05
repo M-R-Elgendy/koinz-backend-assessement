@@ -27,6 +27,8 @@ http://localhost:3001
 # Online APIs
 ```
 https://koinz-backend-assessement.onrender.com/api/v1
+
+Note: Due to the use of a free hosting service, requests may experience delays of up to 1 minute due to inactivity on the application endpoints.
 ```
 
 
@@ -35,7 +37,7 @@ https://koinz-backend-assessement.onrender.com/api/v1
 ### Add interval [POST]
 Endpoint: https://koinz-backend-assessment.onrender.com/api/v1/interval
 
-```json
+```javascript
 {
 	"user_id": 1,
     "book_id": 1,
@@ -51,7 +53,13 @@ Endpoint: https://koinz-backend-assessment.onrender.com/api/v1/interval
 { 
     "status": 200,
     "message": "Interval created successfully",
-    "interval": {} 
+    "interval": {
+        "id": 6,
+        "user_id": 1,
+        "book_id": 1,
+        "start_page": 100,
+        "end_page": 101
+    }
 }
 ```
 
