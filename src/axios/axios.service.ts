@@ -10,4 +10,12 @@ export class AxiosService {
             throw new Error(`Error fetching data: ${error.message}`);
         }
     }
+
+    async get(url: string) {
+        try {
+            return await axios.get(url);
+        } catch (error) {
+            throw new Error(`Error fetching data: ${error.message}`);
+        }
+    }
 }
