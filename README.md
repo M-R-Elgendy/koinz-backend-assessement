@@ -35,7 +35,7 @@ Note: Due to the use of a free hosting service, requests may experience delays o
 # API Documentation
 
 ### Add interval [POST]
-Endpoint: https://koinz-backend-assessment.onrender.com/api/v1/interval
+Endpoint: https://koinz-backend-assessement.onrender.com/api/v1/interval
 
 ```javascript
 {
@@ -64,7 +64,7 @@ Endpoint: https://koinz-backend-assessment.onrender.com/api/v1/interval
 ```
 
 ### Get Recommendations [GET]
-Endpoint: https://koinz-backend-assessment.onrender.com/api/v1/interval
+Endpoint: https://koinz-backend-assessement.onrender.com/api/v1/recommend
 
 #### Response
 ```json
